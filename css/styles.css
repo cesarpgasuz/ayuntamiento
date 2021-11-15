@@ -16,18 +16,7 @@
 	background: linear-gradient(rgba(78,234,255,1) 12%, rgba(94,110,255,0.17689073920583853) 66%);
 	
 }
-.banner::before{
-	content: "";
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	background: url(../images/vector2.jpg) center center repeat-y;
-	background-size: cover;
-	z-index: -1;
-	opacity: 1%;
-}
+
 .banner .content{
 	display: flex;
 	justify-content: center;
