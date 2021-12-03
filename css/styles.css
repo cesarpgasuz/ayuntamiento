@@ -662,6 +662,7 @@ footer h5 strong a:visited{
 		position: fixed;
 		top: 0;
 		padding: 15px 0px;
+		z-index: 5;
 	}
 	#menu-movil{
 		display: block;
@@ -681,7 +682,7 @@ footer h5 strong a:visited{
 		padding-left: 50px;
 		padding-top: 90px;
 		gap: 40px;
-		z-index: 50;
+		z-index: 6;
 	}
 	#closeH{
 		color: var(--azul3);
