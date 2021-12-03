@@ -63,7 +63,12 @@
 	font-weight: 400;
 	text-decoration: none;
 }
-
+#menu-movil{
+	display: none;
+}
+#closeH{
+	display: none;
+}
 
 .banner{
 	position: relative;
@@ -433,8 +438,12 @@ footer h5 strong a:visited{
 	padding: 0px;
 }
 .information-datos_body ul li{
-	line-height: 40px;
+	line-height: 180%;
 	font-size: 14px;
+	display: flex;
+}
+.information-datos_body ul li:not(:last-child){
+	margin-bottom: 15px;
 }
 .information-datos_body ul li i{
 	margin-right: 10px;
@@ -536,6 +545,13 @@ footer h5 strong a:visited{
 	.comunidad-content-items{
 		gap: 15px;
 	}
+	
+	/*------ template ----*/
+	.dependencia-contacto{
+		flex-direction: column;
+	}
+	
+	
 }
 
 
@@ -641,6 +657,77 @@ footer h5 strong a:visited{
 	}
 	
 	
+	/* ----- template -------*/
+	.menu{
+		position: fixed;
+		top: 0;
+		padding: 15px 0px;
+	}
+	#menu-movil{
+		display: block;
+		font-size: 24px;
+		color: var(--azul3);
+		cursor: pointer;
+	}
+	.menu-links{
+		position: fixed;
+		background: var(--azul2);
+		flex-direction: column;
+		height: 100vh;
+		width: 70vw;
+		right: -100%;
+		top: 0;
+		transition: all 0.5s;
+		padding-left: 50px;
+		padding-top: 90px;
+		gap: 40px;
+		z-index: 50;
+	}
+	#closeH{
+		color: var(--azul3);
+		position: absolute;
+		font-size: 32px;
+		left: 50px;
+		top: 15px;
+		cursor: pointer;
+		display: block;
+	}
+	
+	.visible{
+		right: 0;
+	}
+	.dependencia{
+		padding-top: 100px;
+	}
+	.dependencia-info_title, .programas-title h4{
+		font-size: 24px;
+	}
+	.dependencia-contacto {
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 40px;
+		height: auto;
+	}
+
+	.information{
+		padding: 50px 0px 100px;
+	}
+	.information-texto{
+		font-size: 16px;
+		padding-bottom: 50px;
+	}
+	.information-datos{
+		grid-template-columns: 1fr;
+	}
+	
+	
+	.programas-container_card img{
+		height: 80px;
+	}
+	.programas-container_card-body-title {
+    	font-size: 18px;
+	}
+	
 	
 }
 
@@ -687,6 +774,13 @@ footer h5 strong a:visited{
 	.comunidad-content-items li img{
 		width: 52px;
 	}
+	
+	
+	/* --- template ----*/
+	.menu-links{
+		width: 100vw;
+	}
+	
 	
 }
 
