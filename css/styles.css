@@ -132,6 +132,7 @@
 }
 .imagen-gobierno{
 	width: 275px;
+	aspect-ratio: 1;
 }
 
 
@@ -422,6 +423,9 @@ footer h5 strong a:visited{
 
 
 /* ----- horario ------*/
+#openHorarioEscritorio, #openHorarioMovil{
+	cursor: pointer;
+}
 .horario{
 	height: 100vh;
 	width: 50vw;
@@ -451,6 +455,7 @@ footer h5 strong a:visited{
 	list-style: none;
 	color: var(--azul1);
 	padding: 0px;
+	margin-bottom: 0px;
 }
 .horario-days_item{
 	display: flex;
@@ -847,19 +852,21 @@ footer h5 strong a:visited{
 	
 	/* ----horario ---*/
 	.horario{
-		height: 90vh;
+		height: auto;
 		width: 90vw;
 		right: 0;
 		left: 0;
-		bottom: -90vh;
+		bottom: -100%;
 		top: auto;
 		margin: 0 auto;
+		border-radius: 10px 10px 0px 0px;
 	}
 	#closeHorarioEscritorio, #openHorarioEscritorio{
 		display: none;
 	}
 	#closeHorarioMovil, #openHorarioMovil{
 		display: flex;
+
 	}
 	.open-horario_movil{
 		bottom: 0;
@@ -934,6 +941,14 @@ footer h5 strong a:visited{
 	/* ---- horario -----*/
 	.horario{
 		width: 100vw;
+		padding-top: 40px;
+	}
+	.horario-header h5{
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+	.day, .hora{
+		font-size: 14px;
 	}
 	
 	
