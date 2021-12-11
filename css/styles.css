@@ -42,8 +42,14 @@
 .menu{
 	width: 100%;
 	height: auto;
-	padding: 30px 0px;
+	padding: 25px 0px;
+	
+}
+.menu-pages{
 	background: var(--azul1);
+}
+.menu-index{
+	background: var(--cyan1);
 }
 .menu-container{
 	display: flex;
@@ -70,19 +76,25 @@
 	margin: 0px;
 }
 .menu-links-item{
-	color: var(--azul3);
 	font-size: 16px;
 	font-weight: 400;
 	text-decoration: none;
-}
-.menu-links-item:visited{
-	color: var(--azul3);
 }
 
 .contenedor-menu-movil{
 	position: relative;
 	display: none;
 }
+.menu-index .menu-links-item{
+	color: var(--azul2);
+}
+.menu-pages .menu-links-item:visited{
+	color: var(--azul3);
+}
+.menu-pages .menu-links-item {
+	color: var(--azul3);
+}
+
 
 #menu-movil{
 	display: none;
@@ -671,6 +683,7 @@ footer h5 strong a:visited{
 }
 .card-person.presidente{
 	margin-bottom: 100px;
+	justify-content: center;
 }
 .presidente .card-person-info_title{
 	font-size: 24px;
@@ -729,6 +742,10 @@ footer h5 strong a:visited{
 
 
 @media screen and (max-width: 991px){
+
+	.banner .content h1{
+		font-size: 28px;
+	}
 	
 	/* --- dependencias ---*/
 	.dependencias-container{
@@ -778,13 +795,12 @@ footer h5 strong a:visited{
 	/* ---- banner ---*/
 	.banner{
 		height: auto;
-		padding: 50px 0px;
+		padding: 70px 0px 50px;
 	}
 	.banner .content{
 		text-align: center;
 	}
 	.banner .content h1{
-		font-size: 28px;
 		margin-top: 20px;
 	}
 	.banner .content span{
@@ -879,6 +895,17 @@ footer h5 strong a:visited{
 		cursor: pointer;
 		transition: all 0.2s;
 	}
+	.menu-index #menu-movil{
+		color: var(--azul1);
+	}
+	.menu-index .menu-links-item{
+		color: var(--azul3);
+	}
+	.menu-index .menu-links-item:hover{
+		color: var(--cyan1);
+	}
+	
+	
 	.menu-links{
 		position: fixed;
 		background: var(--azul2);
@@ -964,6 +991,15 @@ footer h5 strong a:visited{
 		transition: all 0.5s;
 	}
 	
+
+	/*---------- gabinete -------*/
+	.card-person.presidente{
+		flex-direction: column;
+		text-align: center;
+	}
+	.presidente .card-person-info_title{
+		margin-top: 20px;
+	}
 	
 	
 }
@@ -1042,6 +1078,12 @@ footer h5 strong a:visited{
 		font-size: 14px;
 	}
 	
+	/* ----gabinete ----*/
+	.gabinete-person{
+		padding-top: 50px;
+	}
+
+
 	
 }
 
@@ -1051,12 +1093,18 @@ footer h5 strong a:visited{
 	.horario-body {
 		padding: 0px;
 	}
+	.titular-dependencia .imagen-person{
+		width: 120px;
+	}
+	.titular-dependencia .card-person-info_puesto{
+		line-height: 0;
+	}
 }
 
 
 @media screen and (max-width: 384px){
 	.banner{
-		padding: 20px 0px;
+		padding: 70px 0px 20px;
 	}
 	.banner .content h1, .dependencias-textos_title{
 		font-size: 20px;
@@ -1079,15 +1127,21 @@ footer h5 strong a:visited{
 		color: var(--cyan1);
 		transition: all 0.5s ease-out;
 	}
-	.menu-links-item:hover{
+	.menu-pages .menu-links-item:hover{
 		color: var(--cyan1);
 
-
 	}
+
+	
+
+
+
 }
 
 
-.menu-links-item:active{
+	
+
+.menu-pages .menu-links-item:active{
 		color: var(--cyan1);
 		background: var(--azul2);
 	}
