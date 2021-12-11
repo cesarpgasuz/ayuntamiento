@@ -25,6 +25,11 @@
 	--cyan2: #4bb8c7;
 	--servicios: #F4F9FF;
 	--tramites: #F6F6F6;
+	--morena1: #FFC6C3;
+	--pan1: #E2ECFF;
+	--pes1: #F4E4FF;
+	--verde1: #CBFFC6;
+	--fuerza1: #FFD0E9;
 }
 .dependencia-contacto_item.bloqueo{
 	cursor: not-allowed;
@@ -355,17 +360,17 @@ footer h5 strong a:visited{
 
 /* ---------------------------------------- dependencias ------------------------------------------------------*/
 
-.dependencia{
+.dependencia, .gabinete{
 	width: 100%;
 	height: auto;
 	padding: 20px 0px 40px;
 	background: var(--azul1);
 }
 
-.dependencia-info_logo{
+.dependencia-info_logo, .gabinete-info_logo{
 	height: 97px;
 }
-.dependencia-info_title{
+.dependencia-info_title, .gabinete-info_title{
 	font-size: 32px;
 	font-weight: 700;
 	color: var(--azul3);
@@ -381,7 +386,7 @@ footer h5 strong a:visited{
 	margin-right: 20px;
 	border-radius: 100px;
 }
-.dependencia-info-director p{
+.dependencia-info-director p, .gabinete-info_parrafo p{
 	font-size: 14px;
 	line-height: 200%;
 	color: var(--gris2);
@@ -627,9 +632,95 @@ footer h5 strong a:visited{
 
 
 
-
-
-
+/* -------------gabinete --------*/
+.gabinete-person{
+	padding-top: 100px;
+	padding-bottom: 250px;
+}
+.gabinete-person-title{
+	font-size: 24px;
+	font-weight: 700;
+	color: var(--azul1);
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+.card-person{
+	display: flex;
+	align-items: center;
+	padding: 15px;
+}
+.imagen-person{
+	border-radius: 100%;
+	margin-right: 15px;
+}
+.card-person-info_title{
+	color: var(--azul1);
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+.card-person-info_puesto{
+	color: var(--azul2);
+	font-weight: 400;
+}
+.presidente .imagen-person{
+	width: 160px;
+	height: 160px;
+	object-fit: cover;
+}
+.card-person.presidente{
+	margin-bottom: 100px;
+}
+.presidente .card-person-info_title{
+	font-size: 24px;
+}
+.presidente .card-person-info_puesto{
+	font-size: 18px;
+}
+.card-person.sindico, .card-person.regidor, .card-person.titular-dependencia{
+	border-radius: 10px;	
+}
+.card-person.regidor, .card-person.titular-dependencia{
+	margin-bottom: 30px;
+}
+.sindico .imagen-person, .regidor .imagen-person{
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+}
+.sindico .card-person-info_title, .regidor .card-person-info_title, .titular-dependencia .card-person-info_title{
+	font-size: 18px;
+}
+.sindico .card-person-info_puesto, .regidor .card-person-info_puesto, .titular-dependencia .card-person-info_puesto{
+	font-size: 14px;
+}
+.card-person.titular-dependencia{
+	padding: 0px 10px 0px 0px;
+	background: var(--gris1);
+}
+.titular-dependencia .imagen-person{
+	width: 140px;
+	height: 120px;
+	border-radius:10px 0px 0px 10px;
+	object-fit: cover;
+	flex-shrink: 0;
+}
+.morena{
+	background: var(--morena1);
+}
+.pan{
+	background: var(--pan1);
+}
+.pes{
+	background: var(--pes1);
+}
+.verde{
+	background: var(--verde1);
+}
+.fuerza{
+	background: var(--fuerza1);
+}
 
 
 /* ------------------------------------------- responsive -----------------------------------------*/
@@ -817,10 +908,10 @@ footer h5 strong a:visited{
 	.visible{
 		right: 0;
 	}
-	.dependencia{
+	.dependencia, .gabinete{
 		padding-top: 100px;
 	}
-	.dependencia-info_title, .programas-title h4{
+	.dependencia-info_title, .programas-title h4, .gabinete-info_title{
 		font-size: 24px;
 	}
 	.dependencia-contacto {
