@@ -881,7 +881,7 @@ footer h5 strong a:visited{
 	.menu{
 		position: fixed;
 		top: 0;
-		padding: 15px 0px;
+		padding: 10px 0px;
 		z-index: 5;
 	}
 	.contenedor-menu-movil{
