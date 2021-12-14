@@ -1,6 +1,12 @@
 {
 	"icons" : [
 		{
+			"src": "./images/icon1024n.png",
+			"sizes": "1024x1024",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
 			"src": "./images/icon512n.png",
 			"sizes": "512x512",
 			"type": "image/png",
