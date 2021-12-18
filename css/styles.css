@@ -662,6 +662,7 @@ footer h5 strong a:visited{
 	display: flex;
 	align-items: center;
 	padding: 15px;
+	position: relative;
 }
 .imagen-person{
 	border-radius: 100%;
@@ -733,6 +734,19 @@ footer h5 strong a:visited{
 }
 .fuerza{
 	background: var(--fuerza1);
+}
+
+.perfil-gabinete{
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    background: var(--azul1);
+    color: var(--azul3);
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 0px 0px 10px;
+    font-size: 14px;
+    border: 2px solid transparent;
 }
 
 
@@ -1083,6 +1097,12 @@ footer h5 strong a:visited{
 		padding-top: 50px;
 	}
 
+	.perfil-gabinete{
+		right: auto;
+		left: 0;
+		border-radius: 0px 0px 0px 10px;
+	}
+
 
 	
 }
@@ -1132,6 +1152,11 @@ footer h5 strong a:visited{
 
 	}
 
+	.perfil-gabinete:hover{
+		color: var(--azul3);
+    	background: var(--azul2);
+    	border: 2px solid var(--azul1);
+	}
 	
 
 
@@ -1150,4 +1175,43 @@ footer h5 strong a:visited{
 	background: var(--azul3);
 	color: var(--azul1);
 	border: 2px solid var(--azul3);
+}
+
+
+
+.modal{
+	padding: 0;
+	margin: 0;
+}
+.modal-dialog{
+	position: fixed;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: -100%;
+	transition: all 0.5s;
+}
+.modal-content{
+	height: auto;
+	border: 0;
+	border-radius: 10px 10px 0px 0px;
+}
+.modal-body{
+	overflow-y: auto;
+}
+.modal.show .modal-dialog{
+	bottom: -5px;
+	transition: all 0.5s;
+	transform: none;
+}
+.modal.fade .modal-dialog{
+	transform: none;
+	transition: all 0.5s;
+}
+
+.fade{
+	transition: all 0.2s;
+}
+.modal-fullscreen-lg-down{
+	height: auto;
 }
