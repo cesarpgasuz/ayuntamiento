@@ -395,8 +395,11 @@ footer h5 strong a:visited{
 }
 .director{
 	height: 42px;
-	margin-right: 20px;
+	width: 42px;
+	margin-right: 10px;
 	border-radius: 100px;
+	object-fit: cover;
+	
 }
 .dependencia-info-director p, .gabinete-info_parrafo p{
 	font-size: 14px;
@@ -526,7 +529,7 @@ footer h5 strong a:visited{
 
 .information-texto{
 	padding-bottom: 80px;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 200%;
 	color: var(--azul2);
 	font-weight: 400;
@@ -643,6 +646,89 @@ footer h5 strong a:visited{
 }
 
 
+
+/* - texto en la seccion de programas */
+.information-datos--programas_parrafo{
+	font-size: 16px;
+	color: var(--azul2);
+	line-height: 200%;
+	padding-right: 25px;
+	margin-bottom: 40px;
+}
+.information-datos-botones--programas{
+	display: flex;
+	gap: 30px;
+}
+.information-datos-boton{
+	padding: 5px 10px;
+	font-size: 14px;
+	background: gray;
+	border-radius: 5px;
+	border: 2px solid transparent;
+}
+.information-datos-boton:hover{
+	cursor: pointer;
+}
+
+.information-datos-boton.buscando{
+	background: var(--azul1);
+	color: var(--azul3);
+	transition: all 1s;
+}
+.information-datos-boton.buscando:hover{
+	border: 2px solid var(--azul1);
+	color: var(--azul1);
+	background: transparent;
+	transition: all 1s;
+}
+.information-datos-boton.ofreciendo{
+	background: var(--azul3);
+	color: var(--azul1);
+	transition: all 1s;
+}
+.information-datos-boton.ofreciendo:hover{
+	border: 2px solid var(--azul3);
+	background: transparent;
+	transition: all 1s;
+}
+.information-datos-boton.buscando:active, .information-datos-boton.ofreciendo:active{
+	background: var(--gris2);
+	transition: all 0.2s;
+}
+
+.btn-close.buscando{
+	color: var(--cyan1);
+}
+.modal-empleo--buscando{
+	background: var(--azul1);
+	color: var(--azul3);
+}
+.modal-empleo--ofreciendo{
+	background: var(--azul3);
+	color: var(--azul1);
+}
+.modal-empleo-requisitos{
+	color: var(--azul2);
+	line-height: 200%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.modal-footer.botonera{
+	justify-content: space-between;
+}
+.modal-footer-botones-link{
+	display: flex;
+	gap: 30px;
+}
+.dependencia-contacto_item.links{
+	width: auto;
+	padding: 5px 15px;
+	border-radius: 5px;
+	font-size: 16px;
+}
+.dependencia-contacto_item.links i{
+	margin-right: 10px;
+}
 
 /* -------------gabinete --------*/
 .gabinete-person{
@@ -785,7 +871,14 @@ footer h5 strong a:visited{
 	.horario-body{
 		padding: 0px 30px;
 	}
-	
+
+	/* ---programas ---- datos empleo*/
+	.information-datos--programas_parrafo{
+		padding-right: 0;
+	}
+	.information-datos--programas{
+		padding-bottom: 60px;
+	}	
 	
 }
 
@@ -966,7 +1059,6 @@ footer h5 strong a:visited{
 		padding: 50px 0px 100px;
 	}
 	.information-texto{
-		font-size: 16px;
 		padding-bottom: 50px;
 	}
 	.information-datos{
@@ -981,6 +1073,12 @@ footer h5 strong a:visited{
     	font-size: 18px;
 	}
 	
+
+	/* --- progrmas --- empleo modal requisitos---*/
+	.modal-empleo--buscando h5, .modal-empleo--ofreciendo h5{
+		font-size: 16px;
+	}
+
 	
 	/* ----horario ---*/
 	.horario{
@@ -1027,7 +1125,7 @@ footer h5 strong a:visited{
 	.banner .content span, .comunidad-content_title{
 		font-size: 16px;
 	}
-	.banner .content strong, .info-title, .info-parrafo, .dependencias-card_title, .redes-parrafo, .information-texto{
+	.banner .content strong, .info-title, .info-parrafo, .dependencias-card_title, .redes-parrafo, .information-texto, .information-datos--programas_parrafo{
 		font-size: 14px;
 	}
 	
@@ -1068,6 +1166,10 @@ footer h5 strong a:visited{
 		width: 100%;
 	}
 	
+	.programas-title {
+	    padding-bottom: 20px;
+	}
+
 	.programas-container_card img{
 		height: 60px;
 	}
@@ -1119,6 +1221,41 @@ footer h5 strong a:visited{
 	.titular-dependencia .card-person-info_puesto{
 		line-height: 0;
 	}
+
+	.information-datos-botones--programas{
+		flex-direction: column;
+		gap: 15px;
+	}
+	.information-datos-boton{
+		padding: 10px;
+	}
+
+	.modal-empleo--buscando h5, .dependencia-contacto_item.links{
+		font-size: 14px;
+	}
+	.modal-empleo-requisitos{
+		font-size: 14px;
+		line-height: 180%;
+		padding: 0px 10px;
+	}
+	.modal-footer.botonera{
+		flex-direction: column;
+		align-items: stretch;
+	}
+	.modal-footer-botones-link{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+	}
+	.dependencia-contacto_item.links{
+		padding-left: 5px;
+		padding-right: 5px;
+		font-size: 13px;
+	}
+	.dependencia-contacto_item.links i {
+	    font-size: 16px;
+	}
+
 }
 
 

@@ -70,7 +70,7 @@
 						<img src="images/certificado.png" class="img-fluid dependencia-info_logo" alt="">
 						<h1 class="dependencia-info_title">Desarrollo Económico DrMora Guanajuato</h1>
 						<div class="dependencia-info-director">
-							<img src="images/people.jpg" class="img-fluid director" alt="director">
+							<img src="images/gabinete/elizabeth.jpg" class="img-fluid director" alt="director">
 							<p>Lic. Elizabeth Salinas</p>
 						</div>
 					</div>
@@ -78,8 +78,8 @@
 				<div class="col-lg-6 col-md-4 col-sm-12">
 					<div class="dependencia-contacto">
 						<a href="#" class="dependencia-contacto_item bloqueo"><i class="bi bi-alarm-fill"></i></a>
-						<a href="#" class="dependencia-contacto_item bloqueo"><i class="bi bi-telephone-fill"></i></a>
-						<a href="#" class="dependencia-contacto_item bloqueo"><i class="bi bi-envelope-fill"></i></a>
+						<a href="tel:+524191930328" class="dependencia-contacto_item"><i class="bi bi-telephone-fill"></i></a>
+						<a href="mailto:doceconomico@gmail.com" class="dependencia-contacto_item"><i class="bi bi-envelope-fill"></i></a>
 						<a href="https://www.facebook.com/profile.php?id=100074719028151" target="_blank" class="dependencia-contacto_item"><i class="bi bi-facebook"></i></a>
 					</div>
 				</div>
@@ -93,7 +93,7 @@
 	  	<div class="container">
 			<div class="row">
 				<div class="information-texto">
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+					<p>La dirección de Desarrollo Económico es la responsable de fomentar el desarrollo económico, turístico, artesanal y de fomento industrial del municipio a través de programas y servicios orientados preferentemente a las micro, pequeñas y medianas empresas, para propiciar la conservación y generación de empleos permanentes y el bienestar de la población.</p>
 				</div>
 				<div class="information-datos">
 					<div class="information-datos_card servicios">
@@ -150,9 +150,83 @@
 	  	<div class="container">
 		  	<div class="row">
 				<div class="programas-title">
-					<h4>programas</h4>
+					<h4>bolsa de trabajo</h4>
 				</div>
 				<div class="col-lg-6 col-md-12 col-sm-12">
+					<div class="information-datos--programas">
+						<p class="information-datos--programas_parrafo">Si estas buscando trabajo o estas ofertando algún empleo puedes mandar tus datos a la <strong>Dirección de Desarrollo Económico</strong> para que ellos realicen las gestiones necesarias para que encuentres tu próximo empleo o encuentres a tu próximo trabajador.</p>
+						<div class="information-datos-botones--programas">
+							<button class="information-datos-boton buscando" data-bs-toggle="modal" data-bs-target="#buscando">🔍 Estoy Buscando Empleo</button>
+							<button class="information-datos-boton ofreciendo" data-bs-toggle="modal" data-bs-target="#ofreciendo">🧑‍💼 Estoy Ofreciendo Trabajo</button>
+
+						</div>
+					</div>
+				</div>
+
+					<!-- Modal -->
+					<div class="gabinete-modal modal fade" id="buscando" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog modal-xl modal-fullscreen-lg-down">
+					    <div class="modal-content">
+					      <div class="modal-header modal-empleo--buscando">
+					        <h5 class="modal-title" id="exampleModalLabel">Si estas Buscando Empleo, envia la siguiente Información.</h5>
+					        <button type="button" class="btn-close buscando" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body">
+					        <ul class="modal-empleo-requisitos buscando">
+					        			<li>Nombre Completo</li>
+					        			<li>Lugar de Residencia</li>
+					        			<li>Correo Electronico y/o Teléfono de Contacto</li>
+					        			<li>Especialidad o Experiencia</li>
+
+					        	</ul>
+					      </div>
+					      <div class="modal-footer botonera">
+					      	<div class="modal-footer-botones-link">
+					      		<a href="tel:+524191930328" class="dependencia-contacto_item links"><i class="bi bi-telephone-fill"></i> Llamar</a>
+										<a href="mailto:doceconomico@gmail.com?subject=Estoy%20Buscando%20Empleo%2C%20Mando%20mi%20Informacion&body=Nombre%3A%0D%0ALugar%20de%20Residencia%3A%0D%0ACorreo%20Electr%C3%B3nico%3A%0D%0ATel%C3%A9fono%3A%0D%0AEspecialidad%20o%20Experiencia%3A%0D%0A__________________________________%0D%0Apower%20by%20https%3A%2F%2Fdoctormoragob.xyz%0D%0A___________________________________%0D%0A%0D%0A%0D%0A%0D%0A" class="dependencia-contacto_item links"><i class="bi bi-envelope-fill"></i> Mandar Correo</a>
+					      	</div>
+					        <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+					<!-- Modal -->
+					<div class="gabinete-modal modal fade" id="ofreciendo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog modal-xl modal-fullscreen-lg-down">
+					    <div class="modal-content">
+					      <div class="modal-header modal-empleo--ofreciendo">
+					        <h5 class="modal-title" id="exampleModalLabel">Si estas Ofreciendo Trabajo, envia la siguiente Información.</h5>
+					        	
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body">
+					      <ul class="modal-empleo-requisitos buscando">
+					        			<li>Nombre de la Empresa o Razón Social</li>
+					        			<li>Ubicación del Negocio</li>
+					        			<li>Correo Electronico y/o Teléfono</li>
+					        			<li>Requisitos</li>
+					        			<li>Horario</li>
+					        			<li>Remuneración</li>
+					        			<li>Personal de Contacto</li>
+
+					        	</ul>
+					      </div>
+					      <div class="modal-footer botonera">
+					        <div class="modal-footer-botones-link">
+					      		<a href="tel:+524191930328" class="dependencia-contacto_item links"><i class="bi bi-telephone-fill"></i> Llamar</a>
+										<a href="mailto:doceconomico@gmail.com?subject=Estoy%20Ofreciendo%20Trabajo%2C%20Mando%20Informacion&body=Nombre%20de%20la%20Empresa%20o%20Raz%C3%B3n%20Social%3A%0D%0AUbicaci%C3%B3n%20del%20Negocio%3A%0D%0ACorreo%20Electr%C3%B3nico%3A%0D%0ATel%C3%A9fono%3A%0D%0ARequisitos%3A%0D%0A.%0D%0A.%0D%0AHorario%3A%0D%0ARemuneraci%C3%B3n%3A%0D%0APersonal%20de%20Contacto%3A%0D%0A__________________________________%0D%0Apower%20by%20https%3A%2F%2Fdoctormoragob.xyz%0D%0A___________________________________%0D%0A%0D%0A%0D%0A%0D%0A" class="dependencia-contacto_item links"><i class="bi bi-envelope-fill"></i> Mandar Correo</a>
+					      	</div>
+					        <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+
+
+				<div class="col-lg-6 col-md-12 col-sm-12">
+					
 					<div class="programas-container">
 						
 						<div class="programas-container_card">
@@ -183,11 +257,7 @@
 						</div>
 						
 					</div>
-				</div>
-				<div class="col-lg-6 d-none d-sm-none d-md-none d-lg-block">
-					<div class="programas-image">
-						<img src="images/proyect.svg" class="img-fluid" alt="">
-					</div>
+
 				</div>
 			</div>
 		  </div>
