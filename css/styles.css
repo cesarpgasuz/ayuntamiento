@@ -3,14 +3,14 @@
 	src: url("../fonts/Roboto-Regular.woff2");
 	font-style: normal;
 	font-weight: 400;
-	font-display: swap;
+	font-display: optional;
 }
 @font-face{
 	font-family: 'Roboto';
 	src: url("../fonts/Roboto-Bold.woff2");
 	font-style: normal;
 	font-weight: 700;
-	font-display: swap;
+	font-display: optional;
 }
 
 
@@ -381,6 +381,7 @@ footer h5 strong a:visited{
 
 .dependencia-info_logo, .gabinete-info_logo{
 	height: 97px;
+	aspect-ratio: 1/1;
 }
 .dependencia-info_title, .gabinete-info_title{
 	font-size: 32px;
