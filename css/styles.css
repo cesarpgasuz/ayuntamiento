@@ -760,7 +760,7 @@ footer h5 strong a:visited{
 	gap: 15px;
 }
 .img-empleo img{
-
+	aspect-ratio: auto;
 }
 .arrow-mas{
 	position: absolute;
