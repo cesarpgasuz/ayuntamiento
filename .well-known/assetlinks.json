@@ -1,6 +1,6 @@
 [{
         "relation": ["delegate_permission/common.handle_all_urls"],
         "target" : { "namespace": "android_app", "package_name": "xyz.doctormoragob.twa",
-                     "sha256_cert_fingerprints": ["D2:AE:5A:69:56:2F:F0:05:0A:84:2B:27:CD:1C:6B:45:14:AE:EA:13:C4:40:5A:C8:1A:24:32:E4:77:95:3C:29"] }
+                     "sha256_cert_fingerprints": ["0E:74:D3:10:F7:C6:BF:DD:35:E7:A9:38:CC:22:D0:F2:AD:1F:61:35:62:2B:15:3C:70:5F:47:53:CB:11:66:9F"] }
       }
 ]
