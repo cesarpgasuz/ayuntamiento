@@ -259,6 +259,8 @@
 }
 .redes-card_people img{
 	width: 58px;
+	height: 58px;
+	object-fit: cover;
 	border-radius: 100px;
 }
 .redes-card_people span{
