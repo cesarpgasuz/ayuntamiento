@@ -169,7 +169,154 @@
 .info-title{
 	margin-bottom: 20px;
 }
+/*----------- aviso ---------*/
+.avisos{
+	padding: 80px 0px 100px;
+	height: auto;
+	width: 100%;
+}
+.avisos-textos_title{
+	font-size: 36px;
+	font-weight: 700;
+	color: var(--azul1);
+	text-transform: uppercase;
+	text-align: left;
+}
 
+.avisos-textos_parrafo{
+	font-size: 14px;
+	color: var(--azul2);
+	text-align: left;
+	line-height: 180%;
+}
+.avisos-cards{
+	display: grid;
+	grid-template-columns:  1fr 1fr 1fr 1fr;
+	gap: 30px;
+	padding: 30px 0px;
+}
+.avisos-cards-item{
+	padding: 20px 20px 40px;
+	border-radius: 10px;
+	position: relative;
+	
+}
+.avisos-cards-item:nth-child(odd){
+	background: var(--azul3);
+	
+}
+.avisos-cards-item:nth-child(even){
+	background: var(--gris1);
+	
+}
+.avisos-cards-item img{
+	height: 50px;
+	width: 50px;
+	margin-bottom: 20px;
+	aspect-ratio: auto;
+}
+.avisos-cards-item_body h3{
+	color: var(--azul1);
+	font-weight: 700;
+}
+.avisos-cards-item_body.title h3{
+	font-size: 18px;
+}
+.avisos-cards-item_body.subtitle h3{
+	font-size: 14px;
+	line-height: 180%;
+}
+.avisos-cards-item_body.title p{
+	font-size: 13px;
+	line-height: 180%;
+	color: var(--azul2);
+}
+.avisos-links{
+	position: absolute;
+	bottom: 5px;
+	right: 15px;
+	font-size: 32px;
+	color: var(--azul1);
+	border-radius: 100px;
+	height: 32px;
+	width: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s;
+}
+.avisos-links:hover{
+	color: var(--gris1);
+	background: var(--azul1);
+	transition: all 0.5s;
+}
+
+/*------------ calendario ---------------*/
+.calendario{
+	height: auto;
+	width: 100%;
+	padding: 60px 0px 100px;
+}
+.calendario-textos_title{
+	font-size: 36px;
+	font-weight: 700;
+	color: var(--azul1);
+	text-transform: uppercase;
+	text-align: left;
+}
+.calendario-textos_parrafo{
+	font-size: 14px;
+	color: var(--azul2);
+	text-align: left;
+	line-height: 180%;
+}
+.calendario-cards{
+	padding-top: 15px;
+}
+.calendario-item{
+	display: flex;
+	margin-bottom: 15px;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: none;
+}
+
+.calendario-item i{
+	transform: translateX(-35px);
+	font-size: 24px;
+	color: var(--azul2);
+	position: relative;
+	transition: all 0.2s;
+}
+
+.calendario-item:active{
+		background: #C1C1C1;
+	}
+
+.calendario-body{
+	display: flex;
+	width: 90%;
+	padding: 10px 15px;
+}
+.calendario-body img{
+	width: 40px;
+	height: 40px;
+	aspect-ratio: auto;
+	margin-right: 15px;
+	
+}
+
+.calendario-body_textos h4{
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--azul1);
+	margin-bottom: 0px;
+}
+.calendario-body_textos span{
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--azultextobajo);
+}
 
 /* -- dependencias --*/
 .dependencias{
@@ -893,6 +1040,18 @@ footer h5 strong a:visited{
 	.banner .content h1{
 		font-size: 28px;
 	}
+
+	/* ----- avisos ---------*/
+	.avisos-cards{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.image-calendario{
+		display: none;
+	}
+
+	.avisos-textos_title, .avisos-textos_parrafo, .calendario-textos_title, .calendario-textos_parrafo{
+		text-align: center;
+	}
 	
 	/* --- dependencias ---*/
 	.dependencias-container{
@@ -945,12 +1104,22 @@ footer h5 strong a:visited{
 		transition: 0.8s all;
 	}
 	.dependencias-card:hover{
-	background: var(--azul1);
-	transition: 0.8s all;
+		background: var(--azul1);
+		transition: 0.8s all;
 	}
 	.dependencias-card:hover .dependencias-card_title{
 		color: #ffffff;
 	}
+
+
+	.calendario-item:hover{
+		background: var(--gris1);
+	}
+	.calendario-item:hover i{
+		transform: translateX(-10px);
+		transition: all 0.2s;
+	}
+
 }
 
 
@@ -984,6 +1153,35 @@ footer h5 strong a:visited{
 		display: none;
 	}
 	
+	/*---- avisos ----*/
+	.avisos-cards{
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: scroll;
+		scroll-snap-type: x mandatory;
+	}
+
+	.avisos-cards::-webkit-scrollbar {
+	 	height: 8px;               /* width of the entire scrollbar */
+	}
+
+	.avisos-cards::-webkit-scrollbar-track {
+	  	background: #fff;        /* color of the tracking area */
+	}
+
+	.avisos-cards::-webkit-scrollbar-thumb {
+	  	background-color: var(--gris2);    /* color of the scroll thumb */
+	  	border-radius: 20px;       /* roundness of the scroll thumb */
+	
+	}
+
+
+	.avisos-cards-item{
+		min-width: 300px;
+	}
+
+
+
 	/* --- dependencias --*/
 	.dependencias{
 		padding: 50px 0px 120px;
@@ -1177,17 +1375,29 @@ footer h5 strong a:visited{
 
 
 @media screen and (max-width: 575px){
-	.banner .content h1, .dependencias-textos_title{
+	.banner .content h1, .dependencias-textos_title, .avisos-textos_title, .calendario-textos_title{
 		font-size: 24px;
 	}
 	.banner .content span, .comunidad-content_title{
 		font-size: 16px;
 	}
-	.banner .content strong, .info-title, .info-parrafo, .dependencias-card_title, .redes-parrafo, .information-texto, .information-datos--programas_parrafo{
+	.banner .content strong, .info-title, .info-parrafo, .dependencias-card_title, .redes-parrafo, .information-texto, .information-datos--programas_parrafo, .calendario-body_textos h4{
 		font-size: 14px;
 	}
 	
-	.dependencias, .redes{
+
+
+	/* --- avisos ---*/
+	.avisos-cards-item {
+	    min-width: 220px;
+	    min-height: auto;
+	}
+
+	.calendario-item i{
+		transform: translateX(-5px);
+	}
+
+	.dependencias, .redes, .avisos, .calendario{
 		padding-top: 20px;
 		padding-bottom: 60px;
 	}
