@@ -31,6 +31,23 @@
 	--verde1: #CBFFC6;
 	--fuerza1: #FFD0E9;
 }
+
+.post{
+	background: var(--azul3);
+}
+.post-content{
+	padding: 70px 0px;
+}
+.post-content img{
+	margin-bottom: 25px;
+}
+.post-reverse{
+	border: 0;
+	background: var(--azul3);
+	color: var(--azul1);
+	padding: 0px 20px;
+	border-radius: 100px;
+}
 .dependencia-contacto_item.bloqueo{
 	cursor: not-allowed;
 	opacity: 0.2;
