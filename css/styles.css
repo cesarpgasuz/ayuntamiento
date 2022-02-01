@@ -1045,9 +1045,31 @@ footer h5 strong a:visited{
     font-size: 14px;
     border: 2px solid transparent;
 }
+.perfil-gabinete-regidor{
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    color: var(--azul1);
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 0px 0px 10px;
+    font-size: 14px;
+    border: 2px solid transparent;
+}
+.perfil-gabinete-presidente{
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    color: var(--azul1);
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 0px;
+    font-size: 14px;
+    border: 2px solid transparent;
+}
 .body-perfil{
 	max-height: 85vh;
-	padding: 25px 60px;
+	padding: 25px 60px 50px;
 }
 .img-perfil{
 	width: 100px;
@@ -1095,9 +1117,11 @@ footer h5 strong a:visited{
 	color: var(--azultextobajo);
 }
 
+/*
 .card-estudio ul li span, .card-experiencia ul li span{
 	text-transform: capitalize;
 }
+*/
 
 .estudio-estatus{
 	padding-left: 5px;
@@ -1133,6 +1157,15 @@ footer h5 strong a:visited{
 	}
 	.modal-title.nombre-perfil{
 		margin-left: 8px;
+	}
+	.perfil-gabinete-regidor{
+		right: auto;
+		border-radius: 0;
+		left: 20px;
+		background: var(--azul1);
+		color: var(--azul3);
+		padding-top: 2px;
+		padding-bottom: 2px;
 	}
 }
 
@@ -1481,6 +1514,13 @@ footer h5 strong a:visited{
 	.cards-estudios.estudios-doble{
 		grid-template-columns: 1fr;
 	}
+
+	.perfil-gabinete-presidente{
+		left: 0;
+		margin-bottom: -25px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	
 	
 }
@@ -1707,7 +1747,12 @@ footer h5 strong a:visited{
     	background: var(--azul2);
     	border: 2px solid var(--azul1);
 	}
-	
+	.perfil-gabinete-regidor:hover{
+		border: 2px solid var(--azul1);
+	}
+	.perfil-gabinete-presidente:hover{
+		border: 2px solid var(--azul1);
+	}
 
 
 
