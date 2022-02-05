@@ -978,6 +978,7 @@ footer h5 strong a:visited{
 	width: 160px;
 	height: 160px;
 	object-fit: cover;
+	aspect-ratio: auto;
 }
 .card-person.presidente{
 	margin-bottom: 100px;
@@ -999,6 +1000,7 @@ footer h5 strong a:visited{
 	width: 100px;
 	height: 100px;
 	object-fit: cover;
+	aspect-ratio: auto;
 }
 .sindico .card-person-info_title, .regidor .card-person-info_title, .titular-dependencia .card-person-info_title{
 	font-size: 18px;
