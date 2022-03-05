@@ -920,7 +920,6 @@ footer h5 strong a:visited{
 
 /* --------modal imagenes empleo ------*/
 .img-empleo{
-	height: 75vh;
 	display: flex;
 	justify-content: center;
 	gap: 15px;
@@ -937,7 +936,9 @@ footer h5 strong a:visited{
 	border: 2px solid var(--azul1);
 	display: none;
 }
-
+.modal-body.img-empleo{
+	max-height: 76vh;
+}
 
 
 
