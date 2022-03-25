@@ -30,6 +30,9 @@
   --verde1: #cbffc6;
   --fuerza1: #ffd0e9;
 }
+.invisible{
+  display: none;
+}
 
 .post {
   background: var(--azul3);
@@ -701,6 +704,18 @@ footer h5 strong a:visited {
   border-radius: 10px;
   padding: 25px 20px 50px 25px;
 }
+
+
+.information-datos_card.servicios {
+  background: var(--servicios);
+  color: var(--azul1);
+}
+.information-datos_card.tramites {
+  background: var(--tramites);
+  color: var(--azul1);
+}
+
+
 .information-datos_head {
   display: flex;
   align-items: center;
@@ -725,20 +740,20 @@ footer h5 strong a:visited {
   font-size: 14px;
   display: flex;
 }
+.information-datos_body ul li a{
+  text-decoration: none;
+  color: var(--azul1);
+}
+.information-datos_body ul li a:hover{
+  color: var(--bs-pink);
+}
+
 .information-datos_body ul li:not(:last-child) {
   margin-bottom: 15px;
 }
 .information-datos_body ul li i {
   margin-right: 10px;
   font-size: 18px;
-}
-.information-datos_card.servicios {
-  background: var(--servicios);
-  color: var(--azul1);
-}
-.information-datos_card.tramites {
-  background: var(--tramites);
-  color: var(--azul1);
 }
 
 /* ---- programas ---*/
